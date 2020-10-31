@@ -1,0 +1,49 @@
+.checkbox {
+  top: auto;
+  margin: 4px 8px 0 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  -webkit-font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum';
+  position: relative;
+  top: -0.09em;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #1890ff;
+  border-radius: 2px;
+}
+
+.checkbox .inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  direction: ltr;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+
+  border-collapse: separate;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.checkbox .inner.checked {
+  background-color: #1890ff;
+}
+
+.checkbox .inner.indeterminate {
+  background-color: #1890ff;
+  transform: scale(0.5);
+}
